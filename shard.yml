@@ -1,0 +1,9 @@
+name: app-name
+version: 0.1.0
+
+authors:
+  - Andrey A. Konovalov <drvtiny@gmail.com>
+
+crystal: 0.32.0
+
+license: MIT
