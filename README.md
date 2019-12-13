@@ -1,6 +1,24 @@
 # app-name
 
-TODO: Write a description here
+App::Name is a class to get or guess application name.
+It may be usable, for example, in OptionParser or Logger instances
+properties.
+
+Usage:
+```crystal
+require "app-name"
+
+my_app = App::Name.new
+puts app.name
+# or simply so:
+puts App::Name.exec_name
+# you may also set application name yourself:
+app.name = "Rogneda"
+puts app.name
+
+```
+
+App::Name tries to get 
 
 ## Installation
 
