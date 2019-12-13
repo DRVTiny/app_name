@@ -4,7 +4,23 @@ App::Name is a class to get or guess application name.
 It may be usable, for example, in OptionParser or Logger instances
 properties.
 
-Usage:
+App::Name tries to provide best result in all situations, but it may be
+mistaken. Feel free to create an issue is this is your case.
+
+## Installation
+
+1. Add the dependency to your `shard.yml`:
+
+   ```yaml
+   dependencies:
+     app-name:
+       github: DRVTiny/app-name
+   ```
+
+2. Run `shards install`
+
+## Usage
+
 ```crystal
 require "app-name"
 
@@ -16,29 +32,12 @@ puts App::Name.exec_name
 app.name = "Rogneda"
 puts app.name
 
+# App::Name instance will be stringified to <<app [process_id]>>
+puts app
+# will be printed something like this: 
+# Rogneda [1234]
+
 ```
-
-App::Name tries to get 
-
-## Installation
-
-1. Add the dependency to your `shard.yml`:
-
-   ```yaml
-   dependencies:
-     app-name:
-       github: your-github-user/app-name
-   ```
-
-2. Run `shards install`
-
-## Usage
-
-```crystal
-require "app-name"
-```
-
-TODO: Write usage instructions here
 
 ## Development
 
@@ -46,7 +45,7 @@ TODO: Write development instructions here
 
 ## Contributing
 
-1. Fork it (<https://github.com/your-github-user/app-name/fork>)
+1. Fork it (<https://github.com/DRVTiny/app-name/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
