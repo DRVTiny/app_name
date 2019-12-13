@@ -1,2 +1,2 @@
 require "spec"
-require "../src/app-name"
+require "../src/app_name"
