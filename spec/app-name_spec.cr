@@ -1,9 +1,8 @@
 require "./spec_helper"
-
+require "../src/**"
 describe App::Name do
   # TODO: Write tests
 
-  it "works" do
-    false.should eq(true)
-  end
+  app = App::Name.new
+  app.name.should eq "crystal-run-spec"
 end
