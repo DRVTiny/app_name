@@ -24,7 +24,7 @@ mistaken. Feel free to create an issue is this is your case.
 ```crystal
 require "app_name"
 
-my_app = AppName.new
+app = AppName.new
 puts app.name
 # or simply so:
 puts AppName.exec_name
